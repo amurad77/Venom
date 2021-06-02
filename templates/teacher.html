@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../static/teacher.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers</title>
+</head>
+<body>
+    <img class="img1" src="../static/images/t1.png" alt="">
+    <form class="top_form" method="POST">
+        {{form.csrf_token}}
+
+        {{ form.name(class='form', placeholder="Name", type="text") }}
+        <!-- <input class="form" type="text" placeholder="Name"> -->
+        {{ form.surname(class='form', placeholder="Surname", type="text") }}
+
+        <!-- <input class="form" type="text" placeholder="Surname"> -->
+        {{ form.clas(class='form', placeholder="Class", type="text") }}
+
+        <!-- <input class="form" type="text" placeholder="Class"> -->
+        {{ form.science(class='form', placeholder="Science", type="text") }}
+
+        <!-- <input class="form" type="text" placeholder="Science"> -->
+        <button class="button" type="submit">Confirm</button> <br>
+
+       <a href="/home"> <button class="back" type="submit">Back</button> </a>
+    </form>
+
+
+</body>
+</html>

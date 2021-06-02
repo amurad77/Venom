@@ -1,0 +1,52 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.img1{
+    margin-left: 300px;
+    /* The image used */
+    /* background-image: url("img_girl.jpg"); */
+    
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top_form{
+    position: absolute;
+    text-align: center;
+    top: 130px;
+    width:23%;
+    left: 720px;
+}
+
+.form{
+    margin-bottom: 30px;
+    font-size: 40px;
+    border-radius: 7px;
+    position: relative;
+    border: none;
+}
+
+.button{
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 35px;
+    border: none;
+}
+
+.back{
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 35px;
+    border: none;
+    margin-top: 200px;
+    margin-left: 470px;
+}

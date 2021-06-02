@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../static/student.css">
+    <title>Students</title>
+</head>
+<body>
+    <img class="image" src="../static/images/photo-1491308056676-205b7c9a7dc1.jpeg" alt="">
+
+
+    <form class="top_form" method="POST">
+        {{form.csrf_token}}
+
+        {{ form.name(class='form', placeholder="Name", type="text") }}
+        <!-- <input class="form" type="text" placeholder="Name"> -->
+        {{ form.surname(class='form', placeholder="Surname", type="text") }}
+
+        <!-- <input class="form" type="text" placeholder="Surname"> -->\
+        {{ form.age(class='form', placeholder="Age", type="text") }}
+
+        <!-- <input class="form" type="text" placeholder="Age"> -->
+        {{ form.clas(class='form', placeholder="Class", type="text") }}
+
+        <!-- <input class="form" type="text" placeholder="Class"> -->
+        {{ form.science(class='form', placeholder="Science", type="text") }}
+
+        <!-- <input class="form" type="text" placeholder="Science"> -->
+
+
+        <input class="form" type="date" placeholder="History">
+        {{ form.school(class='form', placeholder="School", type="text") }}
+
+        <!-- <input class="form" type="text" placeholder="School"> -->
+        
+        <button class="button" type="submit">Confirm</button> <br>
+
+       <a href="/home"> <button class="back" type="submit">Back</button> </a>
+    </form>
+</body>
+</html>

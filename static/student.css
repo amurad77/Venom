@@ -1,0 +1,38 @@
+.image{
+    height: 950px;
+    width: 100%;
+}
+
+.top_form{
+    position: absolute;
+    text-align: center;
+    top: 130px;
+    width:23%;
+    left: 150px;
+}
+
+.form{
+    margin-bottom: 30px;
+    font-size: 40px;
+    border-radius: 7px;
+    position: relative;
+    border: none;
+}
+
+.button{
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 35px;
+    border: none;
+}
+
+.back{
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 35px;
+    border: none;
+    margin-top: 130px;
+    margin-left: 10px;
+}
