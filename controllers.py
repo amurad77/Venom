@@ -16,9 +16,9 @@ def home():
 @app.route('/teacher', methods=["GET","POST"])
 def tc():
     data = request.form
-    form = Teacher_form()
+    form = TeacherForm()
     if request.method == 'POST':
-        form = Teacher_form(data=data)
+        form = TeacherForm(data=data)
         if form.validate_on_submit():
             t = Teacher(name = form.name.data, surname = form.surname.data, clas = form.clas.data, science = form.science.data)
             t.save()
@@ -30,10 +30,12 @@ def tc():
 @app.route('/student', methods=["GET","POST"])
 def st():
     data = request.form
-    form = Student_form()
+    form = StudentForm()
     if request.method == 'POST':
-        form = Student_form(data=data)
+        form = StudentForm(data=data)
         if form.validate_on_submit():
+            
+            print('fkdfefg')
             s = Student(name = form.name.data, surname = form.surname.data, age = form.age.data, clas = form.clas.data, science = form.science.data, school = form.school.data)
             s.save()
     return render_template('student.html',form=form)

@@ -10,19 +10,21 @@
 </head>
 <body>
     <img class="img1" src="../static/images/t1.png" alt="">
-    <form class="top_form" method="POST">
+    <form class="top_form" action="" method="POST">
         {{form.csrf_token}}
 
         {{ form.name(class='form', placeholder="Name", type="text") }}
+        {{ form.name.errors}}
         <!-- <input class="form" type="text" placeholder="Name"> -->
         {{ form.surname(class='form', placeholder="Surname", type="text") }}
-
+        {{ form.surname.errors}}
         <!-- <input class="form" type="text" placeholder="Surname"> -->
         {{ form.clas(class='form', placeholder="Class", type="text") }}
-
+        
+        {{ form.clas.errors}}
         <!-- <input class="form" type="text" placeholder="Class"> -->
         {{ form.science(class='form', placeholder="Science", type="text") }}
-
+        {{ form.science.errors}}
         <!-- <input class="form" type="text" placeholder="Science"> -->
         <button class="button" type="submit">Confirm</button> <br>
 
