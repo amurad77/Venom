@@ -12,7 +12,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 'welcome123'
       MYSQL_DATABASE: 'Venom'
-
+    command: --default-authentication-plugin=mysql_native_password
+    
   adminer:
     image: adminer
     restart: always
